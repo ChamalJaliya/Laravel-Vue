@@ -32,7 +32,9 @@ class QuestionsController extends Controller
      */
     public function create()
     {
-        //
+        //holding empty question object
+        $question = new Question();
+        return view('questions.create',compact('question'));
     }
 
     /**
