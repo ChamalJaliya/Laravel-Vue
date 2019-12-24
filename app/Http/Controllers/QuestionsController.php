@@ -95,6 +95,7 @@ class QuestionsController extends Controller
      */
     public function destroy(Question $question)
     {
-        //
+        $question->delete();
+        return redirect('/questions')->with('success','Deleted!!');
     }
 }
