@@ -7,7 +7,8 @@ use Illuminate\Support\Str;
 
 /*
 |--------------------------------------------------------------------------
-| Model Factories
+| Model Factories used to create fake models
+
 |--------------------------------------------------------------------------
 |
 | This directory should contain each of the model factory definitions for
@@ -17,6 +18,7 @@ use Illuminate\Support\Str;
 */
 
 $factory->define(User::class, function (Faker $faker) {
+    //creating random data for testing
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
